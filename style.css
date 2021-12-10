@@ -6,23 +6,23 @@ h1{
     color: white;
     text-transform:uppercase;
 }
-.box,
-.fizz,
-.buzz{
+.box{
+    background-color: khaki;
     color: black;
     height: 100px;
     width: 100px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box{
-    background-color: khaki;
-}   
 .fizz{
-    background-color:lightcoral;
+    background-color:slateblue;
 }
 .buzz{
     background-color: limegreen;
+}
+.fizzBuzz{
+    background-color: sandybrown;
 }
