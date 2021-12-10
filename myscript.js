@@ -4,21 +4,21 @@ const contenitore = document.getElementById("contenitore");
 
 // creo ciclo "for" per assegnare classi .box . fizz .buzz
 
-for(let i=1; i<=100; i++){
+for (let i=1; i<=100; i++) {
 
-    if((i%3 == 0)&&(i%5 == 0)){
-        testo="FizzBuzz"; 
+    if((i%3 == 0)&&(i%5 == 0)) {
+        testo= "FizzBuzz"; 
         classe = "fizzBuzz";
         
-    }else if(i%5 == 0){
-        testo="Buzz";
+    } else if (i%5 == 0) {
+        testo= "Buzz";
         classe = "buzz";
     
-    }else if (i%3 == 0) {
-        testo="Fizz";
+    } else if (i%3 == 0) {
+        testo= "Fizz";
         classe = "fizz";
         
-    }else {
+    } else {
         testo = i;
         classe = "";
     }
