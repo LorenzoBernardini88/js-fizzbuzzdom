@@ -6,23 +6,24 @@ const contenitore = document.getElementById("contenitore");
 
 for(let i=1; i<=100; i++){
 
-    if(i%3 == 0){
-        i="Fizz";
-        console.log(i);
-        contenitore.innerHTML += '<div class="box fizz">' + i + '</div>';
-    
+    if((i%3 == 0)&&(i%5 == 0)){
+        testo="FizzBuzz"; 
+        classe = "fizzBuzz";
+        
     }else if(i%5 == 0){
-        i="Buzz";
-        console.log(i);
-        contenitore.innerHTML += '<div class="box buzz">' + i + '</div>';
+        testo="Buzz";
+        classe = "buzz";
     
-    }else if ((i%3 == 0)&&(i%5 == 0)) {
-        i="FizzBuzz";
-        console.log(i);
-        contenitore.innerHTML += '<div class="box fizzBuzz">' + i + '</div>';
-    
+    }else if (i%3 == 0) {
+        testo="Fizz";
+        classe = "fizz";
+        
     }else {
-        console.log(i);
-        contenitore.innerHTML += '<div class="box">' + i + '</div>';
+        testo = i;
+        classe = "";
     }
+
+    console.log(testo);
+    contenitore.innerHTML += '<div class="box '+ classe +' ">' + testo + '</div>';
 }
+
