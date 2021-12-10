@@ -1,0 +1,19 @@
+body{
+    background-color: darkcyan;
+}
+
+.box{
+    background-color: khaki;
+    color: black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fizz{
+    background-color:lightcoral;
+}
+.buzz{
+    background-color: limegreen;
+}
